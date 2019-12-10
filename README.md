@@ -15,7 +15,7 @@ git clone https://github.com/obsh/webircgateway-geoip.git
 mkdir webircgateway/plugins/geoip
 
 # copy plugin files
-cp webircgateway-geoip/plugin.go webircgateway/plugins/geoip
+cp webircgateway-geoip/plugin.go webircgateway/plugins/geoip/
 cp webircgateway-geoip/GeoLite2-Country.mmdb webircgateway/GeoLite2-Country.mmdb
 
 # compile webircgateway with plugin
@@ -30,7 +30,7 @@ cd webircgateway && make
 plugins/geoip.so
 ```
 
-The plugin substitues '%country' macro in realname with ISO 3166-2 two letter country code detected by client's IP address.
+The plugin substitues `%country` macro in realname with ISO 3166-2 two letter country code detected by client's IP address.
 
 ## Notes
 
